@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Week 11 Homework</title>
+  <title>Latitude vs. Wind Speed</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -46,59 +46,56 @@
   </nav>
 
   <div class="container">
-    <div class="jumbotron" style="background-image: url(https://twistedsifter.files.wordpress.com/2012/05/edge-of-the-world-beach-head-chalk-cliff-southern-england.jpg?w=800); background-size: 100% 100%;">
-      <h1 class="display-4 text-white">Weather Project Webpage</h1>
-      <p class="lead text-white">Week 11 Homework</p>
+    <div class="jumbotron">
+      <h1 class="display-4 text-black">Latitude vs. Wind Speed</h1>
       <hr class="my-4">
-      <p class="text-white">This webpage is designed to display 4 main comparison graphs, along with basic interpretation and analysis for future continued research.</p>
+      <img class='center-block img-fluid' src='Fig4.png'>
       <hr class="my-4">
-      <p class="text-white">The homework explored how weather changes the closer you get to the equator. To accomplish this analysis, we pulled data from the OpenWeatherAPI to assemble a dataset of over 500 cities.</p>
-      <br>
-      <p class="text-white">The data was plotted using Matplotlib, and compared latitude to 4 factors: Temperature, Cloudiness, Wind Speed, and Humidity.</p>
+      <p>Wind speeds are generally low from the equator to higher latitudes, but high outliers (wind speeds of 25mph and above) only appear above a latitude of 40.</p>
+      <p>The relatively even spread of wind speeds is due to multiple factors, including high-rise buildings in urban centers creating wind tunnels that generate high wind speeds at latitudes or regions one would usually not expect.</p>
     </div>
   </div>
 
 <div class="container">
   <h3 class="text-center">Visualizations</h3>
-  <hr class="my-4">
     <div class="row">
-        <div class="col-6">
-          <div class="caption">
-              <h3>Temperature</h3>
-              <p><a href="Temperature.html" class="btn btn-light" role="button">Explore Analysis</a></p>
-          </div>
+        <div class="col-md-3">
           <div class="thumbnail">
             <img src="Fig1.png" alt="..." class="img-thumbnail">
           </div>
+          <div class="caption">
+              <h3>Temperature</h3>
+              <p><a href="Temperature.html" class="btn btn-light" role="button">Explore Analysis</a></p>
+            </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-3">
+            <div class="thumbnail">
+              <img src="Fig2.png" alt="..." class="img-thumbnail">
+            </div>
           <div class="caption">
               <h3>Humidity</h3>
               <p><a href="Humidity.html" class="btn btn-light" role="button">Explore Analysis</a></p>
           </div>
-          <div class="thumbnail">
-            <img src="Fig2.png" alt="..." class="img-thumbnail">
-          </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-3">
+            <div class="thumbnail">
+              <img src="Fig3.png" alt="..." class="img-thumbnail">
+            </div>
             <div class="caption">
                 <h3>Cloudiness</h3>
                 <p><a href="Cloudiness.html" class="btn btn-light" role="button">Explore Analysis</a></p>
             </div>
-            <div class="thumbnail">
-              <img src="Fig3.png" alt="..." class="img-thumbnail">
-            </div>
-          </div>
-        <div class="col-6">
-            <div class="caption">
-                <h3>Wind Speed</h3>
-                <p><a href="WindSpeed.html" class="btn btn-light" role="button">Explore Analysis</a></p>
-            </div>
-            <div class="thumbnail">
-              <img src="Fig4.png" alt="..." class="img-thumbnail">
-            </div>
         </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="Fig4.png" alt="..." class="img-thumbnail">
+          </div>
+          <div class="caption">
+              <h3>Wind Speed</h3>
+              <p><a href="WindSpeed.html" class="btn btn-light" role="button">Explore Analysis</a></p>
+          </div>
       </div>
+        </div>
     </div>
 
 
